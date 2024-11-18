@@ -1,4 +1,5 @@
---Latest version: v0.02
+--Latest Version: v0.03
+
 return function()
     local UI = {}
     local Players = game:GetService("Players")
@@ -116,10 +117,10 @@ return function()
 
     function UI.AddButton(name, description, callback)
         local buttonCount = #mainFrame:GetChildren() - 2
-        local position = UDim2.new(0.05 + (buttonCount * 0.28), 0, 0.15, 0)
+        local position = UDim2.new(0.05 + (buttonCount * 0.25), 0, 0.15, 0)
         createButton(name, position, description, callback)
-    end    
-
+    end
+    
     function UI.Show()
         screenGui.Enabled = true
         animateUI(true)
