@@ -1,4 +1,4 @@
---Latest Version: v0.03
+--Latest Version: v0.04
 
 return function()
     local UI = {}
@@ -117,9 +117,9 @@ return function()
 
     function UI.AddButton(name, description, callback)
         local buttonCount = #mainFrame:GetChildren() - 2
-        local position = UDim2.new(0.05 + (buttonCount * 0.25), 0, 0.15, 0)
+        local position = UDim2.new(0.08 + (buttonCount * 0.27), 0, 0.15, 0)
         createButton(name, position, description, callback)
-    end
+    end    
     
     function UI.Show()
         screenGui.Enabled = true
