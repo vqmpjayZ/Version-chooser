@@ -1,3 +1,4 @@
+--Latest version: v0.02
 return function()
     local UI = {}
     local Players = game:GetService("Players")
@@ -114,10 +115,10 @@ return function()
     closeButton.MouseButton1Click:Connect(closeUI)
 
     function UI.AddButton(name, description, callback)
-        local buttonCount = #mainFrame:GetChildren() - 1
-        local position = UDim2.new(0.05 + (buttonCount * 0.3), 0, 0.15, 0)
+        local buttonCount = #mainFrame:GetChildren() - 2
+        local position = UDim2.new(0.05 + (buttonCount * 0.28), 0, 0.15, 0)
         createButton(name, position, description, callback)
-    end
+    end    
 
     function UI.Show()
         screenGui.Enabled = true
